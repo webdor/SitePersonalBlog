@@ -414,6 +414,16 @@ body *:after {
   object-fit: cover;
 }
 
+.sidebar__content {
+  padding: 0 2rem;
+}
+
+.sidebar__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
 .main {
   padding-left: 300px;
   padding-top: 10rem;
@@ -441,30 +451,59 @@ body *:after {
 }
 
 .profile__prof {
+  margin-bottom: 2rem;
   font-size: 1.4rem;
   text-align: center;
   font-weight: 300;
   color: #dedede;
 }
 
-.sidebar {
-  width: 300px;
-  height: 100vh;
-  background-color: #202020;
-  box-shadow: 5px 0 15px rgba(5, 5, 5, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+.profile__text {
+  font-size: 1.2rem;
+  text-align: center;
+  border-top: 1px solid #1c1c1c;
+  border-bottom: 1px solid #1c1c1c;
+  padding: 3rem 0;
+  padding: 3rem 0;
 }
 
-.sidebar__header {
-  height: 180px;
-  background-color: #121212;
+.social {
+  display: flex;
+  justify-content: center;
 }
-.sidebar__header img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+.social__item {
+  margin: 0 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  background: #121212;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1.12em 2.1em;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  font-family: inherit;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 3em;
+  transition: background-color 0.2s linear;
+}
+.btn--red {
+  background-color: #ed3024;
+  box-shadow: 0 7px 17px -10px #ed3024;
+}
+.btn--red:hover {
+  background-color: #d21d11;
+}
+.btn--blue {
+  background-color: #3137c9;
+  box-shadow: 0 7px 17px -10px #3137c9;
+}
+.btn--blue:hover {
+  background-color: #282da4;
 }

@@ -20,3 +20,11 @@
         object-fit: cover;
     }
 }
+.sidebar__content {
+    padding: 0 2rem;
+}
+.sidebar__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
