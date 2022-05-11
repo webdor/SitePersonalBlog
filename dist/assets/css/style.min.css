@@ -734,3 +734,25 @@ body *:after {
 .add-post__send:hover {
   background-color: #2c31b4;
 }
+
+.post {
+  margin-bottom: 3rem;
+  padding: 2.5rem;
+  border-radius: 5px;
+  background-color: #202020;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.35);
+}
+
+.post__content {
+  margin-bottom: 2rem;
+}
+
+.post__text {
+  font-size: 1.4rem;
+  color: #d2d2d2;
+}
+
+.post__data {
+  color: #828282;
+  line-height: 1.2rem;
+}
