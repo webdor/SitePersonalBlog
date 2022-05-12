@@ -839,3 +839,35 @@ body *:after {
   left: 0;
   z-index: 1;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.pagination__item {
+  margin: 0 0.5rem;
+}
+
+.pagination__link {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: #0d0d0d;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s linear;
+}
+.pagination__link:hover {
+  background-color: #121212;
+}
+.pagination__link:active {
+  background-color: #3137c9;
+  box-shadow: 0 0 10px rgba(49, 55, 201, 0.15);
+}
