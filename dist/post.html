@@ -167,7 +167,7 @@
                         </div> <!--  /post__text  -->
                 
                         <div class="related">
-                            <h3 class="related__title">Интересно почитать</h3>
+                            <h3 class="post__subtitle">Интересно почитать</h3>
                             <ul class="related__list">
                                 <li class="related__list-item">
                                     <h4 class="related__list-title">
@@ -196,14 +196,47 @@
                             </ul>
                         </div> <!--  /related  -->
                 
-                        <div class="comments">
-                            <h3 class="comments__title">Обсуждение</h3>
                 
-                            <form action="/" method="post">
-                                <textarea name="comment-text" placeholder="Текст комментария"></textarea>
-                                <button class="btn btn--blue" type="submit">Отправить</button>
-                            </form>
-                        </div>
+                        <h3 class="post__subtitle">Обсуждение</h3>
+                
+                        <form class="form" action="/" method="post">
+                            <div class="form__group">
+                                <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Текст комментария"></textarea>
+                            </div>
+                            <button class="btn btn--blue" type="submit">Отправить</button>
+                        </form>
+                
+                        <ul class="comments">
+                            <li class="comments__item">
+                                <div class="comments__header">
+                                    <img class="comments__avatar" src="assets/images/com-avatar.jpg" alt="">
+                                    <div class="comments__author">
+                                        <div class="comments__name">Dex Hovard</div>
+                                        <time class="comments__pubdate" datetime="2020-12-21 19:21">1 неделя назад</time>
+                                    </div>
+                                </div>
+                                <div class="comments__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quia voluptates, voluptas eveniet deserunt fugiat explicabo saepe perspiciatis non libero illum incidunt optio hic suscipit excepturi tenetur? Aspernatur, praesentium expedita?
+                                </div>
+                                    <button class="comments__reply" type="button">ответить</button>
+                
+                                    <ul class="comments"><!--  второй вложенный список  -->
+                                        <li class="comments__item">
+                                            <div class="comments__header">
+                                                <img class="comments__avatar" src="assets/images/com-avatar.jpg" alt="">
+                                                <div class="comments__author">
+                                                    <div class="comments__name">Dex Hovard</div>
+                                                    <time class="comments__pubdate" datetime="2020-12-21 19:21">1 неделя назад</time>
+                                                </div>
+                                            </div>
+                                            <div class="comments__text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quia voluptates, voluptas eveniet deserunt fugiat explicabo saepe perspiciatis non libero illum incidunt optio hic suscipit excepturi tenetur? Aspernatur, praesentium expedita?
+                                            </div>
+                                                <button class="comments__reply" type="button">ответить</button>
+                                        </li>
+                                    </ul>
+                            </li>
+                        </ul>
                 
                     </div> <!--  /post__content -->
                 
