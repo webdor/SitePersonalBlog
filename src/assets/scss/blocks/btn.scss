@@ -18,6 +18,10 @@
     border-radius: 3em;
     transition: background-color .2s linear;
 
+    &:hover {
+        text-decoration: none;
+    }
+
     &--red {
         background-color: $red;
         box-shadow: 0 7px 17px -10px rgba($red, 7);
