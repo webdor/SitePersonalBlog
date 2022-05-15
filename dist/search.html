@@ -14,7 +14,7 @@
     
     <title>Search</title>
 </head>
-<body>
+<body class="no-scroll">
 
     <div class="page">
         <!-- Header -->
@@ -42,21 +42,25 @@
                             </ul>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Обо мне</a>
+                            <a class="nav__link" href="text.html">Обо мне</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Реклама</a>
+                            <a class="nav__link" href="text.html">Реклама</a>
                         </li>
                     </ul>
                 </nav>
             </div>
             <div class="header__right">
                 <nav class="nav">
-                    <ul>
+                    <ul class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Профиль</a>
+                            <a class="nav__link" href="profil.html">Профиль</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="signin.html">Вход</a>
                         </li>
                     </ul>
+        
                 </nav>
                 <form class="search" action="search.html" method="get">
                     <input class="search__input" type="text" placeholder="Поиск по блогу">
@@ -108,6 +112,7 @@
                 <button type="button" class="btn btn--blue">Написать мне</button>
             </div>
         </aside>        <!-- Main -->
+
         <main class="main">
             <div class="container">
                 
@@ -203,6 +208,36 @@
 
     </div>
 
+    <div class="modal">
+        <div class="modal__content">
+            <form class="form">
+                <div class="form__group form__group--md">
+                    <input type="text" class="form__control" placeholder="Ваше имя" >
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__group form__group--md">
+                    <input type="email" class="form__control" placeholder="Ваш e-mail" >
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__group form__group--md">
+                    <textarea class="form__control form__control--textarea" name="" placeholder="Текст сообщения"></textarea>
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__footer">
+                    <div class="form__group form__group--md">
+                        <button class="btn btn--blue btn--rounded btn--sm" type="submit">Войти</button>
+                    </div>
+                </div>
+            </form>
+            <button class="modal__close" type="button">
+                <img src="assets/images/close.svg" alt="Закрыть">
+            </button>
+    
+        </div>
+    </div>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

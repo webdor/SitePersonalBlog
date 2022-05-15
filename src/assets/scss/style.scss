@@ -20,6 +20,10 @@ body {
 
     font-size: 1.4rem;
     color: $white;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 /* Blocks */
 @import "blocks/page.scss";
@@ -43,4 +47,6 @@ body {
 @import "blocks/form.scss";
 @import "blocks/work.scss";
 @import "blocks/tags.scss";
+@import "blocks/cabinet.scss";
+@import "blocks/modal.scss";
 
