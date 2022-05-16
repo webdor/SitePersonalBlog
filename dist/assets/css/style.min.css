@@ -417,14 +417,70 @@ body.no-scroll {
 .header__left {
   width: 60%;
 }
+@media (max-width: 991px) {
+  .header__left {
+    width: 40%;
+  }
+}
 
 .header__right {
   width: 40%;
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 991px) {
+  .header__right {
+    width: 60%;
+  }
+}
 
-@media (max-width: 700px) {
+.burger {
+  width: 3rem;
+  height: 2rem;
+  position: absolute;
+  background: none;
+  padding: 0;
+  border: none;
+  top: 50%;
+  left: 1.5rem;
+  font-size: 0;
+  color: transparent;
+  transform: translateY(-50%);
+}
+.burger::before, .burger::after,
+.burger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+}
+.burger::before, .burger::after {
+  content: "";
+}
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  bottom: 0;
+}
+.burger span {
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opasity 0.2s linear;
+}
+.burger.active span {
+  opacity: 0;
+}
+.burger.active::before {
+  transform: rotate(45deg);
+}
+.burger.active::after {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 991px) {
   .nav {
     display: none;
   }
@@ -741,6 +797,7 @@ body.no-scroll {
   font-size: 1.5rem;
   height: 26px;
   overflow: hidden;
+  right: none;
   border: none;
   background: transparent;
   color: #fff;

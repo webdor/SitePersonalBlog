@@ -1,5 +1,5 @@
 .nav {
-    @include breakpoint($table-bp) {
+    @include breakpoint ($tablet-bp) {
         display: none;
     }
 }
