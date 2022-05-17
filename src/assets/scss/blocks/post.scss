@@ -43,6 +43,9 @@
     &--oupen {
         margin-bottom: .75rem;
     }
+    @include breakpoint($mobile-bp) {
+        line-height: 1.3;
+    }
 }
 .post__subtitle {
     margin-top: 3rem;
