@@ -1,9 +1,11 @@
 .profile {
     margin-top: -5rem;
-    position: relative;
+
 
     @include breakpoint ($tablet-bp) {
         margin-top: -3.25rem;
+        position: relative;
+        border-bottom: 1px solid #1c1c1c;
     }
 }
 .profile__header {

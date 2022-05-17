@@ -4,6 +4,26 @@
     justify-content: center;
     min-height: 100vh;
     overflow: hidden;
+
+    @include breakpoint ($tablet-bp) {
+
+        .show-sidebar & {
+            position: relative;
+            //маска для контента в мобильной версии при открытом сайтбаре
+            &:after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: rgba($black, .9);
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 100;
+            }
+        }
+
+    }
 }
 .page__title {
     margin-bottom: 3rem;

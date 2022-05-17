@@ -22,7 +22,8 @@ body {
     font-size: 1.4rem;
     color: $white;
 
-    &.no-scroll {
+    &.no-scroll,  //отмена скрола
+    &.show-sidebar {
         overflow: hidden;
     }
 }

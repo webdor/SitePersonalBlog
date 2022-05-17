@@ -7,7 +7,12 @@
     > .comments {
         padding-left: 3rem;
         margin-top: 3rem;
+
+        @include breakpoint($mobile-bp) {
+        padding-left: 2.5rem;
+        }
     }
+
 }
 .comments__header {
     display: flex;

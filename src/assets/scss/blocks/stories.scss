@@ -3,8 +3,13 @@
     grid-template-columns:1fr 1fr 1fr 1fr;//4 колонки auto auto auto auto
     grid-column-gap: 13px;//отступ между колонками
     grid-template-rows: 195px;//высота колонок
-
     margin-bottom: 3rem;
+
+    @include breakpoint ($mobile-bp) {
+        grid-template-columns: 14rem 14rem 14rem 14rem;
+        overflow: auto;//скролл сторисов
+    }
+
 }
 .stories__item {
     overflow: hidden;
