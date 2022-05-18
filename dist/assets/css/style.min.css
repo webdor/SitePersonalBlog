@@ -1588,6 +1588,9 @@ body.no-scroll, body.show-sidebar {
   justify-content: center;
   align-items: center;
 }
+.modal.show {
+  display: flex;
+}
 
 .modal__content {
   width: 100%;

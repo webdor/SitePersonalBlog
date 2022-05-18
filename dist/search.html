@@ -159,7 +159,7 @@
             </div>
             <div class="sidebar__footer">
                 <a class="btn btn--red" href="works.html">Мои работы</a>
-                <button type="button" class="btn btn--blue">Написать мне</button>
+                <button type="button" class="btn btn--blue" data-modal="contact-modal">Написать мне</button>
             </div>
         </aside>        <!-- Main -->
 
@@ -258,8 +258,82 @@
 
     </div>
 
-    <div class="modal">
+    <div class="modal" id="story-modal">
         <video class="modal__video" src="https://youtu.be/igPpGCUns7c" poster="https://youtu.be/igPpGCUns7c"></video>
+    </div>    <div class="modal" id="contact-modal">
+        <div class="modal__content modal__content--contact">
+    
+                <button class="modal__close" type="button">
+                    <img src="assets/images/close.svg" alt="Закрыть">
+                </button>
+    
+                <div class="form__group form__group--md">
+                    <input type="text" class="form__control" placeholder="Ваше имя" >
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__group form__group--md">
+                    <input type="email" class="form__control" placeholder="Ваш e-mail" >
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__group form__group--md">
+                    <textarea class="form__control form__control--textarea" name="" placeholder="Текст сообщения"></textarea>
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__footer">
+                    <div class="form__group form__group--md">
+                        <button class="btn btn--blue btn--rounded btn--sm" type="submit">Войти</button>
+                    </div>
+                </div>
+    
+            <ul class="modal__footer">
+                <li>
+                    e-mail: <a href="mailto:info@website.ua ">info@website.ua </a>
+                </li>
+                <li>
+                    tel: <a href="tel:+380932188821">+38-093-21-888-21</a>
+                </li>
+            </ul>
+        </div>
+    </div>    <div class="modal">
+        <div class="modal__content">
+            <form class="form">
+    
+                <button class="modal__close" type="button">
+                    <img src="assets/images/close.svg" alt="Закрыть">
+                </button>
+    
+                <ul class="social">
+    
+                    <li class="social__item">
+                        <a href="#" class="social__link" target="_blank">
+                            <img src="assets/images/twitter-m.svg" alt="">
+                        </a>
+                    </li>
+    
+                    <li class="social__item">
+                        <a href="#" class="social__link" target="_blank">
+                            <img src="assets/images/facebook-m.svg" alt="">
+                        </a>
+                    </li>
+    
+                    <li class="social__item">
+                        <a href="#" class="social__link" target="_blank">
+                            <img src="assets/images/vk-m.svg" alt="">
+                        </a>
+                    </li>
+    
+                    <li class="social__item">
+                        <a href="#" class="social__link" target="_blank">
+                            <img src="assets/images/copy-m.svg" alt="">
+                        </a>
+                    </li>
+    
+                </ul>
+    
+        </div>
     </div>
     <script src="assets/js/app.js"></script>
 </body>
