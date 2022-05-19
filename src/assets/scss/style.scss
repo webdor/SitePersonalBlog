@@ -22,9 +22,15 @@ body {
     font-size: 1.4rem;
     color: $white;
 
-    &.no-scroll,  //отмена скрола
-    &.show-sidebar {
+    //отмена скрола
+    &.no-scroll {
         overflow: hidden;
+    }
+
+    @include breakpoint($tablet-bp) {
+        &.show-sidebar {
+            overflow: hidden;
+        }
     }
 }
 /* Blocks */

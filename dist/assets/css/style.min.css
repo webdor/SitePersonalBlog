@@ -376,8 +376,13 @@ body *:before,
 body *:after {
   box-sizing: border-box;
 }
-body.no-scroll, body.show-sidebar {
+body.no-scroll {
   overflow: hidden;
+}
+@media (max-width: 991px) {
+  body.show-sidebar {
+    overflow: hidden;
+  }
 }
 
 /* Blocks */
