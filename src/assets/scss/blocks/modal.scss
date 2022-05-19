@@ -26,8 +26,19 @@
     background-color: $primary;
     border-radius: 5px;
 
+    transform: translateY(-50px);
+    transition: transform 200ms ease-in-out;
+
+    @include breakpoint($tablet-bp) {
+        padding: 5rem 3rem 3rem;
+    }
+
     &--contact {
         margin-bottom: 2.5rem;
+    }
+    &--story {
+        padding: 0;
+        background: none;
     }
 }
 .modal__close {
@@ -64,4 +75,8 @@
             text-decoration: none;
         }
     }
+}
+.modal__video {
+    display: block;
+    margin: 0 auto;
 }
